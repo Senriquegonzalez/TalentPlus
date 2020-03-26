@@ -12,6 +12,7 @@ namespace TalentPlus
     public class ConexionPostgres
     {
         NpgsqlConnection con = new NpgsqlConnection("Server=localhost; User Id=postgres;Password=123;Database = TalentPlus");
+
         public void Conectar() 
         {
             con.Open();
@@ -40,6 +41,55 @@ namespace TalentPlus
             string query = "INSERT INTO video(nombre,nombrelocal) VALUES( '"+ruta+ "','" + local + "')";
         NpgsqlCommand ejecutor = new NpgsqlCommand(query, con);
             ejecutor.ExecuteNonQuery();
+            con.Close();
+
+        }
+        public void insertarusuario(string nombre, string email, string pass )
+        {
+            con.Open();
+            string query = "SELECT agregarusuario('" + nombre + "','" + email + "','" + pass + "')";
+            NpgsqlCommand ejecutor = new NpgsqlCommand(query, con);
+            ejecutor.ExecuteNonQuery();
+            con.Close();
+
+        }
+
+        public  int verificarcorreo(string correo) {
+            con.Open();
+            string query = "SELECT validarcorreo('" + correo + "')";
+            NpgsqlCommand ejecutor = new NpgsqlCommand(query, con);
+            ejecutor.ExecuteNonQuery();
+            int a= Convert.ToInt32(ejecutor.ExecuteScalar());
+            con.Close();
+            return a;
+           
+
+
+
+        }
+        public int verificarusuario(string usuario)
+        {
+            con.Open();
+            string query = "SELECT validarusuari('" + usuario + "')";
+            NpgsqlCommand ejecutor = new NpgsqlCommand(query, con);
+            ejecutor.ExecuteNonQuery();
+            int a = Convert.ToInt32(ejecutor.ExecuteScalar());
+            con.Close();
+            return a;
+            
+
+        }
+        public int login(string usuario , string pass)
+        {
+            con.Open();
+            string query = "SELECT login('" + usuario + "','" + pass + "')";
+            NpgsqlCommand ejecutor = new NpgsqlCommand(query, con);
+            ejecutor.ExecuteNonQuery();
+            int a = Convert.ToInt32(ejecutor.ExecuteScalar());
+            con.Close();
+            return a;
+
+
         }
 
 

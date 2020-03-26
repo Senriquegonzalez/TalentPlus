@@ -110,7 +110,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="agregar.aspx" />
+    <Content Include="iniciologin.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="Registro.aspx" />
     <Content Include="Web.config" />
+    <Content Include="inicio.aspx" />
     <Content Include="WebForm2.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -122,7 +126,50 @@
       <DependentUpon>agregar.aspx</DependentUpon>
     </Compile>
     <Compile Include="ConexionPostgres.cs" />
+    <Compile Include="Correo.cs" />
+    <Compile Include="Inicio.Master.cs">
+      <DependentUpon>Inicio.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio.Master.designer.cs">
+      <DependentUpon>Inicio.Master</DependentUpon>
+    </Compile>
+    <Compile Include="iniciologin.aspx.cs">
+      <DependentUpon>iniciologin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iniciologin.aspx.designer.cs">
+      <DependentUpon>iniciologin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InicioLogin.Master.cs">
+      <DependentUpon>InicioLogin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InicioLogin.Master.designer.cs">
+      <DependentUpon>InicioLogin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="inicio.aspx.cs">
+      <DependentUpon>inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inicio.aspx.designer.cs">
+      <DependentUpon>inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registro.aspx.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registro.aspx.designer.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -132,6 +179,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Inicio.Master" />
+    <Content Include="InicioLogin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

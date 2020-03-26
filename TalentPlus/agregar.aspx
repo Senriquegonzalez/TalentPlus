@@ -1,4 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="agregar.aspx.cs" Inherits="TalentPlus.agregar" %>
+﻿<%@ Page Language="C#"  AutoEventWireup="true" CodeBehind="agregar.aspx.cs" Inherits="TalentPlus.agregar" %>
+
+
 
 <!DOCTYPE html>
 
@@ -27,7 +29,7 @@
                     </td>
                     <td>
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Buscar" style="height: 26px" />
-                        <asp:TextBox ID="txt_buscador" runat="server" Width="190px"></asp:TextBox>
+                        <asp:TextBox ID="txt_buscador" runat="server" Width="190px" OnTextChanged="txt_buscador_TextChanged"></asp:TextBox>
                     </td>
                 </tr>
             </table>

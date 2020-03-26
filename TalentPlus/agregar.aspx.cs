@@ -34,14 +34,13 @@ namespace TalentPlus
             videoFrame.Text = string.Format(@"<video width=""640"" height=""360"" controls>  <source src="""+a+@"""type =""video/mp4"">         
                 
 
-        </ video >");
-       
-
-
-
-            
-
+        </ video >"); 
             Panel1.Controls.Add(videoFrame);
+        }
+
+        protected void txt_buscador_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
