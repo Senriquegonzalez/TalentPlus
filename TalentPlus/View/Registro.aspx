@@ -1,7 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="TalentPlus.Registro" %>
 
 <!DOCTYPE html>
-
+<!-- en estas hojas son las que debes trabajar html, todo lo que es codigo, las hojas .css deben ir
+    en una carpeta que se llame de la misma manera, asi como el pantallazo que te debe estar por llegar
+    por whatsaap
+   -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
