@@ -109,6 +109,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\normalize.css" />
+    <Content Include="css\styles.css" />
+    <Content Include="img\header1.jpg" />
     <Content Include="View\agregar.aspx" />
     <Content Include="Datos\iniciologin.aspx" />
     <Content Include="View\login.aspx" />

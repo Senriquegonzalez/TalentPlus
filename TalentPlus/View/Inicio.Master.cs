@@ -29,14 +29,5 @@ namespace TalentPlus
 
         }
 
-        protected void registro_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/Registro.aspx");
-        }
-
-        protected void login_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/login.aspx");
-        }
     }
 }

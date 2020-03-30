@@ -33,15 +33,6 @@ namespace TalentPlus
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control btn_buscar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_buscar;
-
-        /// <summary>
         /// Control txt_buscador.
         /// </summary>
         /// <remarks>
@@ -51,22 +42,13 @@ namespace TalentPlus
         protected global::System.Web.UI.WebControls.TextBox txt_buscador;
 
         /// <summary>
-        /// Control registro.
+        /// Control btn_buscar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button registro;
-
-        /// <summary>
-        /// Control login.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button login;
+        protected global::System.Web.UI.WebControls.Button btn_buscar;
 
         /// <summary>
         /// Control Panel3.

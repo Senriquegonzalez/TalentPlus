@@ -4,60 +4,42 @@
 
 <html>
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talent Plus</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
-        .auto-style2 {
-            width: 1287px;
-        }
-        .auto-style3 {
-            width: 309px;
-        }
-    </style>
 </head>
 <body>
-    <h1>texto prueba</h1>
-    <form id="form1" runat="server">
-        <div>
-            <table class="auto-style1">
-                <tr>
-                    <td class="auto-style2">
-                        <asp:Button ID="btn_buscar" runat="server" OnClick="btn_buscar_Click1" Text="buscar" />
-                        <asp:TextBox ID="txt_buscador" runat="server" Width="268px"></asp:TextBox>
-                    </td>
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <table class="auto-style1">
-                            <tr>
-                                <td class="auto-style3">
-                                        <asp:Button ID="registro" runat="server" Text="REGISTRO" OnClick="registro_Click" />
-                                </td>
-                                <td>
-                                        <asp:Button ID="login" runat="server" Text="INICIAR SESIÓN" OnClick="login_Click" />
-                                </td>
-                            </tr>
-                        </table>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">
-                        <asp:Panel ID="Panel3" runat="server" Width="786px">
-                        </asp:Panel>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-            </table>
-        </div>
+    <header class="site-header inicio">
+        <h1>BIENVENIDO A TALENT PLUS</h1>
+        <form id="form1" runat="server">
+            <div>
+                <asp:TextBox ID="txt_buscador" runat="server" Width="268px"></asp:TextBox>
+                <asp:Button ID="btn_buscar" runat="server" OnClick="btn_buscar_Click1" Text="Buscar" />
+            </div>
+            <div class="contenedor contenido-header">
+                <div class="barra">
+                    <nav class="navegacion">
+                        <a id="registro" href="../View/Registro.aspx">REGISTRO</a>
+                        <a id="login" href="../View/login.aspx">INICIAR SESIÓN</a>
+                    </nav>
+                </div>
+            </div>
+            <asp:Panel ID="Panel3" runat="server" Width="786px">
+                </asp:Panel>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 <p>
-                    contenido que cambia</p>
+                    contenido que cambia
+                </p>
             </asp:ContentPlaceHolder>
-        <p>
-            &nbsp;</p>
-    </form>
+            <p>
+                &nbsp;
+            </p>
+        </form>
+    </header>
 </body>
 </html>
