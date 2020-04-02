@@ -30,9 +30,15 @@
                 </div>
             </div>
             <asp:Panel ID="Panel3" runat="server" Width="786px">
+                 <video width="640" height="360" controls >  <source src='<% =a %>'type ="video/mp4">         
+                
+
+        </ video >
                 </asp:Panel>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 <p>
+
+                    
                     contenido que cambia
                 </p>
             </asp:ContentPlaceHolder>
