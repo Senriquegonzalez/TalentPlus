@@ -92,6 +92,21 @@ namespace TalentPlus
 
         }
 
+        public DataTable recuperarcontrasena(string mail)
+        {
+            con.Open();
+            string query = "select * from \"usuario\" where email='" + mail + "'";
+            NpgsqlCommand conector = new NpgsqlCommand(query, con);
+            NpgsqlDataAdapter datos = new NpgsqlDataAdapter(conector);
+            DataTable tabla = new DataTable();
+            datos.Fill(tabla);
+            con.Close();
+            return tabla;
+
+
+
+        }
+
 
     }
 }

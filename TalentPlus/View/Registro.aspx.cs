@@ -31,7 +31,7 @@ namespace TalentPlus
             {
 
                 conectando.insertarusuario(UserName.Text, Email.Text, Password.Text);
-                Response.Redirect("~/inicio.aspx");
+                Response.Redirect("~/Datos/inicio.aspx");
             }
            
             

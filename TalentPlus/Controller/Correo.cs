@@ -39,9 +39,7 @@ namespace TalentPlus
            
         }
 
-        public void correo() {
-            enviarCorreo("segakiss@hotmail.com","ejemplo");
-        }
+       
 
        
     }

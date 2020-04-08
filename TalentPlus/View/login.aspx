@@ -12,6 +12,17 @@
         <div>
             <asp:Login ID="Login1" runat="server" OnAuthenticate="Login1_Authenticate">
             </asp:Login>
+            <br />
+            <br />
+            <br />
+            Recuperar contraseña
+            <br />
+            Correo
+            <asp:TextBox ID="txtcorreo" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="correoRequired" runat="server" ControlToValidate="txtcorreo" ErrorMessage="El correo es obligatorio." ToolTip="El correo es obligatorio." ValidationGroup="Login2">*</asp:RequiredFieldValidator>
+            <asp:Button ID="btncorreo" runat="server" CommandName="Login" OnClick="btncorreo_Click" Text="ENVIAR" ValidationGroup="Login2" />
+            <asp:Literal ID="FailureText" runat="server" EnableViewState="False"></asp:Literal>
+            <br />
         </div>
     </form>
 </body>

@@ -16,12 +16,7 @@ namespace TalentPlus
 
         }
 
-        protected void Button4_Click(object sender, EventArgs e)
-        {
-            Correo ejem = new Correo();
-            ejem.correo();
-            
-        }
+       
 
         protected void Button5_Click(object sender, EventArgs e)
         {
