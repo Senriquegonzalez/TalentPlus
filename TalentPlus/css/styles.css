@@ -16,6 +16,13 @@ body {
     height: 100vh;
     min-height: 60rem;
 }
+.limenu {
+    float: right;
+    list-style: none;
+    padding: 10px 15px;
+    padding-bottom: 50px;
+    display: block;
+}
 
 .contenido-header {
     height: 100%;
