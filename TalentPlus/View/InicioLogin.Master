@@ -51,10 +51,7 @@
                     <td class="auto-style2">
                         <asp:Panel ID="Panel3" runat="server" Width="639px">
 
-                             <video width="640" height="360" controls >  <source src='<% =a %>'type ="video/mp4">         
-                
-
-        </ video >
+                             
                         </asp:Panel>
                     </td>
                     <td class="auto-style9">

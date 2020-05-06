@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "tarea-Inicio",
+      "appliesTo": "View/Inicio.Master",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "tarea-Inicio",
+      "appliesTo": "View/Inicio.Master",
+      "type": "launch"
+    }
+  ]
+}

@@ -102,6 +102,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
@@ -116,11 +117,14 @@
     <Content Include="Datos\iniciologin.aspx" />
     <Content Include="View\login.aspx" />
     <Content Include="View\Registro.aspx" />
+    <Content Include="View\vervideo.aspx" />
+    <Content Include="View\vervideologin.aspx" />
     <Content Include="Web.config" />
     <Content Include="Datos\inicio.aspx" />
     <Content Include="View\WebForm2.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\video.cs" />
     <Compile Include="View\agregar.aspx.cs">
       <DependentUpon>agregar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -172,6 +176,20 @@
     </Compile>
     <Compile Include="View\Registro.aspx.designer.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\vervideo.aspx.cs">
+      <DependentUpon>vervideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\vervideo.aspx.designer.cs">
+      <DependentUpon>vervideo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\vervideologin.aspx.cs">
+      <DependentUpon>vervideologin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\vervideologin.aspx.designer.cs">
+      <DependentUpon>vervideologin.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>

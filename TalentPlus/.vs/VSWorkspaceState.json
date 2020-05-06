@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Datos",
+    "\\View"
   ],
-  "SelectedNode": "\\TalentPlus.sln",
+  "SelectedNode": "\\Datos\\Inicio.aspx",
   "PreviewInSolutionExplorer": false
 }

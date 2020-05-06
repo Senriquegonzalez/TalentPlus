@@ -24,6 +24,19 @@ namespace TalentPlus
 
             MessageBox.Show("desconectado");
         }
+        public int totalvideos()
+        {
+            con.Open();
+            string query = " SELECT COUNT(*) FROM \"video\"";
+            NpgsqlCommand ejecutor = new NpgsqlCommand(query, con);
+            ejecutor.ExecuteNonQuery();
+            int a = Convert.ToInt32(ejecutor.ExecuteScalar());
+            con.Close();
+            return a;
+
+
+
+        }
         public DataTable Consulta()
         { 
             string query ="select * from \"video\"";

@@ -20,14 +20,15 @@ namespace TalentPlus
 
         protected void btn_buscar_Click1(object sender, EventArgs e)
         {
-             a = "../Videos/" + txt_buscador.Text + ".mp4";
+            a = "../Videos/" + txt_buscador.Text + ".mp4";
+            Response.Redirect("~/View/vervideo.aspx?videoid=" + a + "");
             //var videoFrame = new Literal();
             //videoFrame.Text = string.Format(@"<video width=""640"" height=""360"" controls>  <source src=""" + a + @"""type =""video/mp4"">         
-                
 
-       // </ video >");
 
-           // Panel3.Controls.Add(videoFrame);            
+            // </ video >");
+
+            // Panel3.Controls.Add(videoFrame);            
 
         }
 
